@@ -1,3 +1,5 @@
+/* Je ne sais pas quel est le mieux entre appliquer directement sur les éléments ou appeler la class */
+
 body {
     background-color: #f1e8e8;
     margin: 0;
@@ -14,7 +16,19 @@ header {
     justify-content: center;
 }
 
-/* Pour la navigation et l'effet hover // j'ai eu du mal à mettre sur la même ligne */
+header h1 {
+
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    color: white;
+    /* déjà blanc, je sais... */
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* Pour la navigation et l'effet hover // j'ai eu du mal à mettre sur la même ligne // l'anti puce fonctionne et du ++ pour faire joli */
 .nav-list ul {
     display: flex;
     justify-content: center;
@@ -37,7 +51,7 @@ header {
 .nav-list li a {
     text-decoration: none;
     color: white;
-    padding: 10px 15px;
+    padding: 20px 15px;
     display: inline-block;
     border-radius: 5px;
     transition: background 0.3s;
@@ -45,4 +59,221 @@ header {
 
 .nav-list li a:hover {
     background-color: #e6ab08;
+}
+
+
+/* -------------------------------Partie banner //peut-être revoir les divers padding et margins---------------------------- */
+
+.banner {
+    text-align: center;
+    padding: 15px 20px;
+    color: white;
+    background-color: rgb(59, 69, 206);
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.banner button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.banner button:hover {
+    background-color: #e6ab08;
+}
+
+/* Finalement on va faire un bouton séparé, je laisse au dessu pour l'instant */
+.bottom-button {
+    text-align: center;
+    margin: 40px 0;
+    /* espace au-dessus et en dessous */
+}
+
+.bottom-button button {
+    padding: 12px 25px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.bottom-button button:hover {
+    background-color: #e6ab08;
+}
+
+
+
+/* ----------------------------Partie Produits-------------------------------------- */
+
+.featured-products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.25);
+    /* trop cool l'effet, pas en bleu, trop épais ?*/
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(+5px);
+    /* compte comme une animation ?*/
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #e6ab08;
+}
+
+/* ---------------Vidéo------------ */
+
+.video-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.video-section video {
+    max-width: 100%;
+    /* bien utiliser ça pour adapter à l'écran */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------- Partie responsive ------------------------------------------------------------ */
+
+/* padding du nav */
+@media (max-width: 767px) {
+    .nav-list ul {
+        flex-direction: column;
+        /* maybe ? */
+        padding: 10px 15px;
+    }
+
+    .nav-list li a {
+        padding: 15px 10px;
+        text-align: center;
+    }
+}
+
+
+
+
+/* Bannière */
+@media (max-width: 767px) {
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner p {
+        font-size: 0.95rem;
+    }
+
+    .banner {
+        padding: 40px 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .banner {
+        padding: 50px 15px;
+    }
+}
+
+
+/* grid des produits */
+
+@media (max-width: 767px) {
+    .product-card {
+        width: 90%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .product-card {
+        width: 45%;
+    }
+}
+
+/* Pour la vidéo */
+.video-section video {
+    max-width: 95%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .video-section {
+        margin: 20px 0;
+    }
+}
+
+
+
+/* Pour le bouton */
+@media (max-width: 767px) {
+    .bottom-button button {
+        width: 80%;
+        font-size: 1.1rem;
+    }
 }
