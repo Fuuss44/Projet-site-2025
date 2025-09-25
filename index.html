@@ -9,9 +9,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-video">
+        <video autoplay muted loop playsinline> <!--Pratique-->
+            <source src="videos/Ocean1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <h1>Datalivery</h1>
     </header>
+
     <nav class="nav-list">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -33,7 +38,7 @@
                 <div class="product-card">
                     <img src="https://picsum.photos/200/150" alt="Service 1">
                     <h3>Data Treatment</h3>
-                    <p>Data cleaning and preparation.</p>
+                    <p>Data cleaning and preparation for the next steps.</p>
                     <button>Voir</button>
                     <!-- Renvoyer sur les bons produits dans le catalogue !!! -->
                 </div>
@@ -45,8 +50,8 @@
                 </div>
                 <div class="product-card">
                     <img src="https://picsum.photos/200/150" alt="Service 3">
-                    <h3>Data Predictions and Classifications</h3>
-                    <p>Depending of your needs.</p>
+                    <h3>Data Science</h3>
+                    <p>Complementary informations in the catalogue.</p>
                     <button>Voir</button>
                 </div>
 
@@ -63,12 +68,6 @@
 
 
 
-    <div class="video-section">
-        <video controls width="800" height="450">
-            <source src="videos/datalivery-demo.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la vidéo.
-        </video>
-    </div>
 
 
     <div class="bottom-button">
@@ -77,7 +76,7 @@
         </button>
     </div>
 
-    <footer>©Paul Orieux - 25/09/2025</footer>
+    <footer>© Paul Orieux - 25/09/2025</footer>
 </body>
 
 </html>
