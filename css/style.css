@@ -1,5 +1,16 @@
 /* Je ne sais pas quel est le mieux entre appliquer directement sur les éléments ou appeler la class */
 
+
+/* test pour régler le pb */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* empêche tout scroll horizontal */
+}
+
+
 body {
     background-color: #f1e8e8;
     margin: 0;
