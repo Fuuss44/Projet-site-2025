@@ -9,7 +9,11 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-video">
+        <video autoplay muted loop playsinline> <!--Pratique-->
+            <source src="videos/Ocean1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <h1>Catalogue</h1>
     </header>
     <nav class="nav-list">
@@ -24,10 +28,10 @@
 
     <main>
         <section class="banner">
-            <h2> Your data services at hand !</h2>
+            <h2> Datalivery : Your data services at hand !</h2>
         </section>
 
-        <section class="featured-products">
+        <section class="featured-products" id="treatment">
             <h2>Data services</h2>
             <div class="product-grid">
                 <div class="product-card">
@@ -43,7 +47,7 @@
 
                     <!-- Renvoyer sur les bons produits dans le catalogue !!! -->
                 </div>
-                <div class="product-card">
+                <div class="product-card" id="analysis">
                     <img src="https://picsum.photos/200/150" alt="Service 2">
                     <h3>Data Analysis</h3>
                     <p>Our team performs in-depth exploratory data analysis to uncover hidden patterns, correlations,
@@ -55,7 +59,7 @@
                         accessible).</p>
 
                 </div>
-                <div class="product-card">
+                <div class="product-card" id="science">
                     <img src="https://picsum.photos/200/150" alt="Service 3">
                     <h3>Data Science</h3>
                     <p>We build predictive models and classification algorithms tailored to your specific needs, whether
@@ -67,7 +71,7 @@
 
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" id="visualisation">
                     <img src="https://picsum.photos/200/150" alt="Service 4">
                     <h3>Data Visualisation</h3>
                     <p>We design interactive and static visualizations, dashboards, and reports that effectively

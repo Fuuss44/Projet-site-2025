@@ -51,6 +51,11 @@ footer {
 
 }
 
+/* Utile ? Mieux ? */
+html {
+    scroll-behavior: smooth;
+}
+
 
 
 /* Pour la vidéo dans le header + nav ? ou pas : */
@@ -243,14 +248,105 @@ footer {
 
 .video-section video {
     max-width: 100%;
-    /* bien utiliser ça pour adapter à l'écran */
+    /* bien utiliser ça pour adapter à l'écran, pourquoi je me suis embarqué dans un délire de pixels... */
     height: auto;
     border-radius: 10px;
 }
 
 
+/*------------------------------------------------------------ Partie profil ------------------------------------------------*/
 
 
+.profile-info {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 30px auto;
+}
+
+.profile-info img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    /* Normalement ça corrige pour pas écraser l'image */
+    border-radius: 50%;
+    /* rond */
+    margin-bottom: 15px;
+    border: 4px solid rgb(59, 69, 206);
+}
+
+.profile-info h2 {
+    margin: 10px 0;
+    font-size: 1.8rem;
+    color: rgb(59, 69, 206);
+}
+
+.profile-info p {
+    margin: 8px 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.profile-services {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-services h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(59, 69, 206);
+}
+
+.profile-services ul {
+    list-style: none;
+    /* trop bien ce truc */
+    padding: 0;
+}
+
+.profile-services li {
+    background-color: #f1e8e8;
+    margin: 10px 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.profile-social {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.profile-social h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: rgb(59, 69, 206);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.social-links a img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
 
 
 /* ---------------------------------------------------------- Partie responsive ------------------------------------------------------------ */
@@ -317,7 +413,7 @@ footer {
     }
 }
 
-/* Pour la vidéo */
+/* Pour la vidéo // en trop maintenant mais je garde sous le coude*/
 .video-section video {
     max-width: 95%;
     height: auto;
@@ -328,8 +424,6 @@ footer {
         margin: 20px 0;
     }
 }
-
-
 
 /* Pour le bouton */
 @media (max-width: 767px) {
