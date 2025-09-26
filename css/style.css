@@ -43,11 +43,13 @@ footer {
     padding: 15px;
     margin-top: 30px;
     border-radius: 8px;
-    /* coins arrondis */
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    font-size: 0.85rem;
+    /* mieux en plus petit */
+    line-height: 1.4;
 
 }
 
@@ -239,6 +241,17 @@ html {
     transition: transform 0.3s;
 }
 
+/* test, on garde pour l'instant*/
+.product-card img {
+    width: 100%;
+    height: 150px;
+    /* hauteur fixe */
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
 .product-card:hover {
     transform: translateY(+5px);
     /* compte comme une animation ?*/
@@ -250,6 +263,23 @@ html {
     margin-bottom: 10px;
 }
 
+
+.product-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.product-button:hover {
+    background-color: #e6ab08;
+}
+
+/* sinon error w3c car "The element button must not appear as a descendant of the a element."
 .product-card button {
     padding: 8px 15px;
     border: none;
@@ -263,7 +293,7 @@ html {
 .product-card button:hover {
     background-color: #e6ab08;
 }
-
+*/
 /* Pas convaincu...
 .product-card p {
     text-align: left;
