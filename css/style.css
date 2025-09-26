@@ -267,7 +267,7 @@ html {
 .product-button {
     display: inline-block;
     padding: 8px 15px;
-    background-color: #007BFF;
+    background-color: rgb(59, 69, 206);
     color: white;
     border-radius: 6px;
     text-decoration: none;
@@ -480,8 +480,6 @@ html {
         text-align: center;
     }
 }
-
-
 
 
 /* Bannière */
