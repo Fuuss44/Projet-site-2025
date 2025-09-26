@@ -9,7 +9,13 @@
 </head>
 
 <body>
-    <header>Contact</header>
+    <header class="header-video">
+        <video autoplay muted loop playsinline> <!--Pratique-->
+            <source src="videos/Ocean1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>Contact</h1>
+    </header>
     <nav class="nav-list">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -20,7 +26,32 @@
     </nav>
 
 
-    <main>Main content</main>
+    <main>
+        <section class="banner">
+            <h2> Datalivery : Your data services at hand !</h2>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Looking for an appointment about data ? <br>
+                (first appointment is free of charges)</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="6" placeholder="" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+
+
+
+    </main>
 
 
 

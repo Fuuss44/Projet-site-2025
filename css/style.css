@@ -127,6 +127,30 @@ html {
     background-color: #e6ab08;
 }
 
+/* ------------------------------------------------------ Présentation de l'entreprise --------------------------------------- */
+
+.about-company {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px 25px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.about-company h2 {
+    color: rgb(59, 69, 206);
+    margin-bottom: 15px;
+    justify-content: center;
+    /*text-align: center;  Hmmmm */
+}
+
+.about-company p {
+    line-height: 1.6;
+}
+
+
 
 /* -------------------------------Partie banner //peut-être revoir les divers padding et margins---------------------------- */
 
@@ -189,7 +213,8 @@ html {
 /* ----------------------------Partie Produits-------------------------------------- */
 
 .featured-products {
-    padding: 40px 20px;
+    padding: 15px 20px;
+    /* ça occupe mieux l'espace comme ça */
     text-align: center;
 }
 
@@ -238,6 +263,12 @@ html {
 .product-card button:hover {
     background-color: #e6ab08;
 }
+
+/* Pas convaincu...
+.product-card p {
+    text-align: left;
+}
+*/
 
 /* ---------------Vidéo------------ */
 
@@ -349,8 +380,63 @@ html {
 }
 
 
-/* ---------------------------------------------------------- Partie responsive ------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------- Form de contact ------------------------------------------------------- */
 
+.contact-form-section {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    color: rgb(59, 69, 206);
+    margin-bottom: 20px;
+}
+
+.contact-form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-section label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.contact-form-section button {
+    padding: 12px 20px;
+    background-color: rgb(59, 69, 206);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form-section button:hover {
+    background-color: #e6ab08;
+}
+
+
+
+/* ---------------------------------------------------------- Partie responsive ------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
 /* padding du nav */
 @media (max-width: 767px) {
     .nav-list ul {
